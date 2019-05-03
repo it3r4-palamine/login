@@ -160,21 +160,14 @@ a:hover{
 }
 
 
-
-table{
-
-    
-
-}
-
 .col-5{
 	background-color: gray;
+	color:black; 
 	position: fixed;
     margin-top: -395px;
     margin-left: -15px;
     padding: 25px;
 	width: 74%;
-
 }
 
 .col-lg-8{
@@ -187,7 +180,7 @@ table{
 }
 
 .tr1{
-	margin-top: -318px;
+	margin-top: -313px;
     border: 1px none;
     background-color: white;
     width: 1008px;
@@ -251,6 +244,8 @@ table{
   background-color: rgba(0,0,0,0.4); 
 }
 
+/*MODAL*/
+
 .modal-content {
 background-color: #cce6ff;
 margin: auto;
@@ -282,7 +277,8 @@ width:90px;
 height:30px;
 font-size:20px;
 padding:0px;
-margin-left:1px;
+float: right;
+margin-top: 0px;
 }
 
 .mpic{
@@ -306,6 +302,46 @@ margin-left: 23px;
 	width: 100%;
 }
 
+.sort{
+	color: black;
+}
+
+/*DROPDOWN*/
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
 
 
 </style>
@@ -340,7 +376,7 @@ margin-left: 23px;
 			</form>
 	<div class="box2">		
 		<div class="col-lg-8">
-			<h4 style="font-size:30px; "><b>Events</b></h4>
+			<h4 style="font-size:30px;color:black; "><b>Events</b></h4>
 			<a href="#">
 				<span class="plus" id="myBtn">&#x2b;</span>
 			</a>
@@ -356,8 +392,8 @@ margin-left: 23px;
 				    <label>Description</label><br>
 				    <input type="text" required class="mtext"><br><br>
 				    <label>Start Date:</label>
-				    <input type="date" class="date"><br>
-				    <input type="submit" class="btn btn-primary" id="msub">
+				    <input type="date" class="date">
+				    <input type="submit" class="btn btn-primary"  id="msub">
 			    </form>
 		  </div>
 
@@ -366,22 +402,25 @@ margin-left: 23px;
 			<div class="col-sm-8">
 				<div class="col-5">
 					<table>
-						<tr>Sort by:&nbsp;&nbsp;</tr>
+						<tr class="sort">Sort by:&nbsp;&nbsp;</tr>
 						<tr>Date created:&nbsp;&nbsp;<input type="date" name="">&nbsp;&nbsp;&nbsp;</tr>
 						<tr>Show <input type="number" style="width: 60px">&nbsp;&nbsp;</tr>
 						<tr>Entries</tr>
 					</table>
 				</div>
 					<table>
-						<tr class="tr1">
-							<td><input type="checkbox" name=""></td>
-							<td style="float:right;position:fixed;top:280px;right:218px;">Location:Lorem Ipsum</td>
-							<td style="float:right;position:fixed;top:300px;right:107px;">Description:Lorem Ipsum Lorem Ipsum</td>
-							<td style="float:right;position:fixed;top:322px;right:259px;">Date:00/00/0000</td>
-							<td>
-								<button style="float:left;position:fixed;font-size:25px;top:290px;right:40px;color:black;background-color: white;"><i class="glyphicon glyphicon-trash" ></i></button>
-							</td>
-						</tr>
+						<div id="dropdown">
+							<tr class="tr1"   id="dropbtn">
+								<td><input type="checkbox" name=""></td>
+								<td style="float:right;position:fixed;top:285px;right:215px;">Location:Lorem Ipsum</td>
+								<td style="float:right;position:fixed;top:308px;right:105px;">Description:Lorem Ipsum Lorem Ipsum</td>
+								<td style="float:right;position:fixed;top:331px;right:250px;">Date:00/00/0000</td>
+								<td>
+									<button style="float:left;position:fixed;font-size:25px;top:295px;right:40px;color:black;background-color: white;"><i class="glyphicon glyphicon-trash" ></i></button>
+								</td>
+							</tr>
+						</div>
+						</div>
 						<tr class="tr2">
 							<td></td>
 							<td></td>
