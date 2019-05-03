@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+.navbar{
+	background-color: rgb(0,122,223);
+	position: fixed;
+	width: 100%;
+
+}	
+
+#title{
+	color: black;
+	font-size: 50px;
+	font-family: lemonada;
+	margin-top: 10px;
+}
+
+.title{
+	text-align:center;
+}
+
+.container-fluid{
+	margin-bottom: 25px;
+}
+
+.menu{
+	cursor:pointer;
+	font-size:45px; 
+	margin-left:875px;
+	color: black;
+	position: fixed;
+	float: left;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color:black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  border: 1px;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.menuoption{
+	margin-top: 30px;
+	margin-left: 45px;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:rgb(0,122,223);
+   color: white;
+   text-align: center;
+   height: 70px;
+}
+
+.login-form{
+position: fixed;
+margin-top: 0px;
+box-shadow: 0px 0px 10px 1px grey;
+border-radius: 30px;
+padding-bottom: 45px;
+margin-left: 0px;
+background-color: #c4c4c4;
+}
+
+.logo{
+	font-size: 10px;
+}
+
+
+.form1{
+	margin-left: 25px;
+}
+
+.btn{
+	margin: 5px;
+	padding: 20px;
+	width: 219px;
+	text-align: center;
+	font-size: 25px;
+	font-family: italic;
+	margin-left: 20px;
+	background-color: #3EA2FA;
+}
+
+a{
+	color: white;
+}
+
+a:hover{
+	text-decoration: none;
+	color: white;
+}
+
+
+
+.col-lg-8{
+	background-color: #c4c4c4;
+	width: 74%;
+	position: fixed;
+	margin-left: 25%;
+	margin-top: -460px;
+	padding: 20px;
+}
+
+.plus{
+	color: black;
+	position: fixed;
+	margin-left: 69%;
+    margin-top: -60px;
+    font-size: 50px;
+}
+
+.col-sm-8{
+	border: 1px none;
+	position: fixed;
+	width: 74%;
+	height: 50%;
+	margin-left: -20px;
+	margin-top: 30px;
+	background-color: #c4c4c4;
+	padding-top: 405px;
+}
+
+.col-sm-4{
+	background-color: pink;
+	width: 50%;
+}
+
+table{
+	margin-top:10px;
+}
+
+
+</style>
+
+<body>
+	<div>
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" id="title" href="#"><b>Tabulation System</b></a>
+	      <span class="menu" onclick="openNav()">&#9776;</span>
+		     <div id="mySidenav" class="sidenav">
+			  	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			  	<div class="menuoption">
+				  <a href="#">LOGIN</a>
+				  <a href="#">REGISTER</a>
+				</div>
+			</div>
+	    </div>
+	</div>
+
+<div class="row">
+	<div class="login-form col-md-3 offset-md-4" >
+			<i class="fa fa-user-circle" style="font-size:70px;margin-left:120px;margin-top:10px;"></i>
+			<h4 class="title">Admin</h4>
+
+			<form class="form1">
+				<button class="btn btn-primary"><a href="event.html">Events</a></button><br>
+				<button class="btn btn-primary"><a href="user.html">Users</a></button><br>
+				<button class="btn btn-primary"><a href="report.html">Reports</a></button><br>
+				<button class="btn btn-primary"><a href="result.html">Results</a></button>
+			</form>
+	<div class="box2">		
+		<div class="col-lg-8">
+			<h4 style="font-size:30px; ">Events</h4>
+			<a href="">
+				<span class="plus">&#x2b;</span>
+			</a>
+
+			<div class="col-sm-8">
+					<table>
+						<tr>
+							<td>asd</td>
+							<td>asd</td>
+							<td>asd</td>
+						</tr>
+					</table>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+<div class="footer">
+</div>
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+</body>
+</html>
